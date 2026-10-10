@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>a little book of us ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="dust" class="fx"></canvas>
+  <div class="fx leak"></div>
+  <div class="fx vig"></div>
+  <div class="fx grain" style="inset:-10%"></div>
+
+  <button class="music" id="mu" aria-pressed="false" title="Lay Phyu – Min Mha Min">♡ Music</button>
+  <audio id="song" src="audio/min-mha-min.mp3" preload="none"></audio>
+
+  <main>
+    <div class="stage">
+      <div class="book" id="book" aria-live="polite"></div>
+    </div>
+
+    <nav class="nav" aria-label="Scrapbook pages">
+      <button id="pv">← Previous</button>
+      <span class="pn" id="pn">01 / 10</span>
+      <button id="nx">Next →</button>
+    </nav>
+  </main>
+
+  <div id="lb" role="dialog" aria-modal="true" aria-label="Photo">
+    <button class="x" aria-label="Close photo">×</button>
+    <figure>
+      <img class="img" alt="">
+      <figcaption></figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
